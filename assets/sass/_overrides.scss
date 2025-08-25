@@ -57,6 +57,31 @@ h1 {
 //proxima nova xbold
 a.lesson-item{
     padding:.02rem;
+
+     &-item {
+        text-decoration: none;
+        color: $orange;
+        display: block;
+        width: 200px;
+        min-height: 200px;
+        padding: 1rem;
+        margin: 0.5rem 1rem .5rem;
+        border-radius: .5rem;
+        border: 2px solid $light-gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }
+        &:hover {
+            background-color: $orange;
+            color: white;
+
+            .icon {
+                filter: brightness(1) invert(0);
+            }
+        }
+
 .title {
             font-family:"proxima-nova", sans-serif;
             margin: .5rem;
