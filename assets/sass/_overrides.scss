@@ -1,40 +1,12 @@
-// Proxima Nova Black
-// @font-face{
-//     font-family:'Proxima Nova Black';
-//     src: local('Proxima_Nova_Black'),
-//         url('/fonts/Proxima_Nova_Black.otf') format('opentype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-// // Proxima Nova Xbold
-// @font-face{
-//     font-family:'Proxima Nova Xbold';
-//     src: local('Proxima_Nova_Xbold'),
-//         url('/fonts/Proxima Nova Xbold.otf') format('opentype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-// // Proxima Nova Reg
-// @font-face{
-//     font-family:'Proxima Nova Reg';
-//     src: local('Proxima_Nova_Reg'),
-//         url('/fonts/Proxima Nova Reg.otf') format('opentype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
-// // Proxima Nova Sbold
-// @font-face{
-//     font-family:'Proxima Nova Sbold';
-//     src: local('Proxima_Nova_SBold'),
-//         url('/fonts/Proxima Nova Sbold.otf') format('opentype');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-
 //Proxima nova sbold
+
+.my-5 h1.text-start{
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 900;
+
+}
+
+//proxima nova sbold
 .my-3{
     font-family: "proxima-nova", sans-serif;
     font-size: 1.04rem;
@@ -58,8 +30,12 @@ body {
 
 // ----- Text formatting
 
-a.nav-link {
-letter-spacing: .06rem;
+a.nav-link.button {
+    border-radius: 2.5rem;
+    padding: .50rem 2.15rem;
+    letter-spacing: .06rem;
+    font-size: 1.03rem;
+
 }
 
 h1 {
@@ -79,12 +55,41 @@ h1 {
 }
 
 //proxima nova xbold
-a.lesson-item .title {
+a.lesson-item{
+    padding:.02rem;
+
+     &-item {
+        text-decoration: none;
+        color: $orange;
+        display: block;
+        width: 200px;
+        min-height: 200px;
+        padding: 1rem;
+        margin: 0.5rem 1rem .5rem;
+        border-radius: .5rem;
+        border: 2px solid $light-gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }
+        &:hover {
+            background-color: $orange;
+            color: white;
+
+            .icon {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+.title {
             font-family:"proxima-nova", sans-serif;
             margin: .5rem;
             font-size: 1rem;
-            line-height: 1.3rem;
+            line-height: 1.2rem;
             text-align: center;
-            letter-spacing: .06rem;
+            letter-spacing: .05rem;
             font-weight: 800;
         }
+
+    }

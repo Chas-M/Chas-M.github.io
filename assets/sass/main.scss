@@ -3,7 +3,7 @@
 // Colours
 $white: #fff;
 $dark: #333;
-$light-gray: #F2F2F3;
+$light-gray: #f2f2f3dc;
 $navy: #001d77;
 $orange: #ff6319;
 
@@ -52,12 +52,12 @@ h1 {
             @include btn-pill();
 
             &:hover {
-                opacity: .85;
+                opacity: .80;
             }
 
             &.is-checked {
-                background-color: darken($orange, 7%);
-                border-color: darken($orange, 7%);
+                background-color: darken($orange, 10%);
+                border-color: darken($orange, 10%);
             }
         }
 
