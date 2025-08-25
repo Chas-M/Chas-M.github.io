@@ -1,0 +1,46 @@
+{{ define "list" }}
+
+{{ partial "header" . }}
+
+{{ $section_type := printf .Section }}
+
+<div class="my-5 container-md layout-{{ $section_type }}">
+    <h1><a href="./">All <span class="highlight">{{ .Title }}</span> Activities</a></h1>
+
+    <div class="lesson my-5">
+
+        <div class="filters">
+            <!-- Search Filter -->
+            {{ partial "search" . }}
+            
+            <!-- Navigation -->
+            <div class="my-3">
+      
+                {{ $partial_path := printf "%s%s" "navigation/" $section_type }}
+                {{ $partial_file := printf "partials/navigation/%s.html" .Section}}
+
+                {{ if eq .Section $section_type }}
+                    {{ if templates.Exists $partial_file }} 
+                        {{ partial $partial_path . }}
+                    {{ else }}
+                        <div class="alert alert-warning" role="alert">
+                            Create a navigation specific to this section under <code>layouts/partials/navigation/section-name.html</code>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+           
+        </div>
+
+        <ul class="lesson-grid grid container-fluid">
+            {{ range where .Site.RegularPages "Section" $section_type }}
+                {{ partial "item" . }}
+            {{ end }}
+        </ul>
+
+    </div>
+</div>
+
+{{ partial "footer" . }}
+
+{{ end }}

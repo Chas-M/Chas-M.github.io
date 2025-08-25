@@ -1,0 +1,90 @@
+// Proxima Nova Black
+// @font-face{
+//     font-family:'Proxima Nova Black';
+//     src: local('Proxima_Nova_Black'),
+//         url('/fonts/Proxima_Nova_Black.otf') format('opentype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// // Proxima Nova Xbold
+// @font-face{
+//     font-family:'Proxima Nova Xbold';
+//     src: local('Proxima_Nova_Xbold'),
+//         url('/fonts/Proxima Nova Xbold.otf') format('opentype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// // Proxima Nova Reg
+// @font-face{
+//     font-family:'Proxima Nova Reg';
+//     src: local('Proxima_Nova_Reg'),
+//         url('/fonts/Proxima Nova Reg.otf') format('opentype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// // Proxima Nova Sbold
+// @font-face{
+//     font-family:'Proxima Nova Sbold';
+//     src: local('Proxima_Nova_SBold'),
+//         url('/fonts/Proxima Nova Sbold.otf') format('opentype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+//Proxima nova sbold
+.my-3{
+    font-family: "proxima-nova", sans-serif;
+    font-size: 1.04rem;
+    font-weight: 600;
+    font-style: normal;
+}
+
+//proxima nova black
+body {
+    color: $dark;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lesson-search {
+    font-family: "proxima-nova", sans-serif;
+    letter-spacing: .7;
+
+}
+
+// ----- Text formatting
+
+a.nav-link {
+letter-spacing: .06rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+
+    a {
+        text-decoration: none;
+        color: $dark;
+        letter-spacing: .7;
+        font-weight: 900;
+    }
+}
+
+.highlight {
+    color: $orange;
+}
+
+//proxima nova xbold
+a.lesson-item .title {
+            font-family:"proxima-nova", sans-serif;
+            margin: .5rem;
+            font-size: 1rem;
+            line-height: 1.3rem;
+            text-align: center;
+            letter-spacing: .06rem;
+            font-weight: 800;
+        }

@@ -1,0 +1,54 @@
+ <!-- 
+    Category Navigation 
+    * filterCategory('<category>') determines what suggested words appear in the secondary navigation
+    * data-filter="<.category>" determines the category to filter the lessons
+-->
+<ul class="nav nav-pills justify-content-center lesson-nav lesson-nav-category button-group" data-filter-group="category">
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button reset" onclick="filterCategory('all')" data-filter="*">All</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('tkk')" data-filter='tkk'>TK-K</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('grd1')" data-filter='grd1'>Grade 1-2</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('grd3')" data-filter='grd3'>Grade 3-4</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('grd5')" data-filter='grd5'>Grade 5-6</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('grd7')" data-filter='grd6'>Grade 8-7</a></li>
+
+</ul>
+
+<!-- 
+    Tag Navigation 
+    * filter-tag-<category> is what associates the navigation item with the category navigation
+    * Where <category> would match the value set for filterCategory('<category>')
+    * data-filter="<.tag>"
+-->
+ <ul class="nav nav-pills justify-content-center lesson-nav lesson-nav-tags button-group" data-filter-group="tags">
+    <li class="nav-item filter-tag-tkk hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".individual">Individual</a></li>
+    <li class="nav-item filter-tag-tkk hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".group">Group</a></li>
+    <li class="nav-item filter-tag-grd1 hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".individual">Individual</a></li>
+    <li class="nav-item filter-tag-grd1 hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".group">Group</a></li>
+    <li class="nav-item filter-tag-grd3 hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".individual">Individual</a></li>
+    <li class="nav-item filter-tag-grd3 hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".group">Group</a></li>
+    <li class="nav-item filter-tag-grd5 hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".individual">Individual</a></li>
+    <li class="nav-item filter-tag-grd5 hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".group">Group</a></li>
+    <li class="nav-item filter-tag-grd7 hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".individual">Individual</a></li>
+    <li class="nav-item filter-tag-grd7 hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".group">Group</a></li>
+
+</ul>
+
+<!--
+    Tags and subtags used:
+    * All
+    * tkk
+        - individual
+        - group
+    * grd1 (grade 1-2)
+        - individual
+        - group
+    * grd3 (grade 3-4)
+        -individual
+        -group
+    * grd5 (grade 5-6)
+        - individual
+        - group
+    * grd7 (grade 7-8)
+        - individual
+        - group
+-->

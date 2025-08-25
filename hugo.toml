@@ -1,0 +1,16 @@
+baseURL = 'https://Chas-M.github.io'
+languageCode = 'en-us'
+title = 'Hugo Site'
+
+[taxonomies]
+# Use singular rather than plural for default taxonomies
+tag = "tag"
+category = "category"
+type = "type"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[params]
+  base_path = ''

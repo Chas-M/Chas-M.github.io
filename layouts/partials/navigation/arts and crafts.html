@@ -1,0 +1,41 @@
+ <!-- 
+    Category Navigation 
+    * filterCategory('<category>') determines what suggested words appear in the secondary navigation
+    * data-filter="<.category>" determines the category to filter the lessons
+-->
+<ul class="nav nav-pills justify-content-center lesson-nav lesson-nav-category button-group" data-filter-group="category">
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button reset" onclick="filterCategory('all')" data-filter="*">All</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('painting')" data-filter=".painting">Painting</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('drawing')" data-filter=".drawing">Drawing</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('tactile')" data-filter=".tactile">Tactile</a></li>
+</ul>
+
+<!-- 
+    Tag Navigation 
+    * filter-tag-<category> is what associates the navigation item with the category navigation
+    * Where <category> would match the value set for filterCategory('<category>')
+    * data-filter="<.tag>"
+-->
+<ul class="nav nav-pills justify-content-center lesson-nav lesson-nav-tags button-group" data-filter-group="tags">
+    <li class="nav-item filter-tag-painting hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".acrylictempera">Acrylic and Tempera</a></li>
+    <li class="nav-item filter-tag-painting hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".watercolor">Watercolor</a></li>
+    <li class="nav-item filter-tag-drawing hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".marker">Marker</a></li>
+    <li class="nav-item filter-tag-drawing hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".pencilcrayon">Pencil and Crayon</a></li>
+    <li class="nav-item filter-tag-tactile hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".multimedia">Multi-media</a></li>
+    <li class="nav-item filter-tag-tactile hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".clay">Clay</a></li>
+
+</ul>
+
+<!--
+    Tags and subtags used:
+    * All
+    * Painting
+        - Acrylic and Tempera <acrylictempera>
+        - Watercolor
+    * Drawing
+        - Marker
+        - Pencil and Crayon <pencilcrayon>
+    * Tactile
+        - Multi-media
+        - Clay
+-->

@@ -1,0 +1,40 @@
+ <!-- 
+    Category Navigation 
+    * filterCategory('<category>') determines what suggested words appear in the secondary navigation
+    * data-filter="<.category>" determines the category to filter the lessons
+-->
+<ul class="nav nav-pills justify-content-center lesson-nav lesson-nav-category button-group" data-filter-group="category">
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button reset" onclick="filterCategory('all')" data-filter="*">All</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('1day')" data-filter='.1day'>Single day</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('Xday')" data-filter='.Xday'>Multi-day</a></li>
+    <li class="nav-item filter-category"><a href="javascript:void(0)" class="nav-link button" onclick="filterCategory('outdoor')" data-filter='.outdoor'>Outdoor</a></li>
+
+</ul>
+
+<!-- 
+    Tag Navigation 
+    * filter-tag-<category> is what associates the navigation item with the category navigation
+    * Where <category> would match the value set for filterCategory('<category>')
+    * data-filter="<.tag>"
+-->
+ <ul class="nav nav-pills justify-content-center lesson-nav lesson-nav-tags button-group" data-filter-group="tags">
+    <li class="nav-item filter-tag-outdoor hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".teambased">TEAM based</a></li>
+    <li class="nav-item filter-tag-1day hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".group">Group</a></li>
+    <li class="nav-item filter-tag-1day hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".individual">Individual</a></li>
+    <li class="nav-item filter-tag-Xday hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".group">Group</a></li>
+    <li class="nav-item filter-tag-Xday hide"><a href="javascript:void(0)" class="nav-link button" data-filter=".individual">Individual</a></li>
+    
+</ul>
+
+<!--
+    Tags and subtags used:
+    * All
+    * 1day (Single day)
+        - individual
+        - group
+    * Xday (Multi-day)
+        - individual
+        - group
+    * Outdoor
+        - TEAM based
+-->

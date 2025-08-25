@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Colours
+$white: #fff;
+$dark: #333;
+$light-gray: #F2F2F3;
+$navy: #001d77;
+$orange: #ff6319;
+
+// Mixins
+@mixin btn-pill {
+    border-radius: 2.5rem;
+    padding: .30rem 2rem;
+    letter-spacing: .05rem;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: $dark;
+}
+
+
+// ----- Text formatting
+h1 {
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: $dark;
+        letter-spacing: .7;
+    }
+}
+
+.highlight {
+    color: $orange;
+}
+
+// ----- Lesson
+.lesson {
+
+    // Navigation
+    &-nav {
+        .nav-item.hide {
+            display: none;
+        }
+
+        .nav-link {
+            background: $orange;
+            border: 1px solid $orange;
+            color:$white;
+            margin: .5rem .25rem;
+            @include btn-pill();
+
+            &:hover {
+                opacity: .85;
+            }
+
+            &.is-checked {
+                background-color: darken($orange, 7%);
+                border-color: darken($orange, 7%);
+            }
+        }
+
+        // &-category {
+        //     font-size: 1.5rem;
+        // }
+
+        &-tags {
+            min-height: 32px;
+
+            .nav-link {
+                background: $white;
+                border: 1px solid $orange;
+                color: $orange;
+
+                &:hover {
+                    background: $light-gray;
+                }
+
+                &.is-checked {
+                    background-color: $light-gray;
+                }
+            }
+        }
+    }
+
+    // Search
+    &-search {
+        display: flex;
+    }
+
+    // Grid
+    &-grid {
+        list-style: none;
+        margin: 0;
+        padding:0;
+    }
+
+    &-item {
+        text-decoration: none;
+        color: $orange;
+        display: block;
+        width: 200px;
+        min-height: 200px;
+        padding: 1rem;
+        margin: 0 .5rem 1rem .5rem;
+        border-radius: .5rem;
+        border: 1px solid $light-gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &:hover {
+            background-color: $orange;
+            color: white;
+
+            .icon {
+                filter: brightness(1) invert(0);
+            }
+        }
+
+        .title {
+            margin: .5rem;
+            font-size: 1rem;
+            // line-height: 1;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .icon {
+            width: 100px;
+        }
+    }
+}
+
+// OVERIDES
+@import "_overrides";
